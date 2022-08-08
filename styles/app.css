@@ -1,0 +1,278 @@
+/* azul claro: #366BFF;
+azul oscuro: #122250;
+rosa: #FF2EAB;
+gris claro: #C9D6FA; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@100;300;400&display=swap');
+
+
+/* General */
+
+*{
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+}
+img{
+  max-width: 100%;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #9DAFBD;
+}
+
+
+::placeholder {
+  color: #9DAFBD;
+}
+
+html{
+  font-size: 16px; /* 1rem = 16px */
+}
+
+html,body{
+  margin: 0;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  color: #122250;
+}
+
+/* Componentes */
+
+.main-nav{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-top: 1.5rem;
+}
+.main-nav ul{
+  display: flex;
+  gap: 1em;
+  list-style-type: none;
+}
+.main-nav p{
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+
+.main-header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 140px;
+}
+.main-header > div{
+  flex: 1;
+}
+.main-header img{
+  width: min(400px, 100%);
+}
+
+.bg-cover{
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-image: url(../images/cover-bg.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.projects{
+  background-color: #C9D6FA; 
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.benefits-section{
+  padding-top: 88px;
+  padding-bottom: 88px;
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(201, 214, 250, 0.4));
+}
+
+.benefits{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1em;
+  text-align: center;
+  margin-top: 48px;
+}
+.benefits > div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.benefits .icon{
+  width: 4.25rem;
+  height: 4.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 50%;
+  color: #9DAFBD;
+  margin-bottom: 20px;
+}
+
+.quote{
+  padding-top:96px;
+  padding-bottom: 96px;
+  text-align: center;
+}
+
+.quote .main-text{
+  font-weight: 400;
+  color: #366BFF;
+}
+
+.contact-section{
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(201, 214, 250, 0.4));
+}
+
+.contact{
+  display: flex;
+  gap: min(5vw,95px)
+}
+.contact .card{
+  width: min(450px, 100%);
+}
+.contact .address{
+  flex: 1;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.card{
+  background-color: white;
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.1);
+  padding: 30px 33px;
+}
+
+.input-field{
+  background-color: #F7F9FA;
+  border:solid 1px #D1DBE3;
+  padding: 15px;
+  display: block;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.input-field label{
+  font-size: 0.75rem;
+  color: #9DAFBD;
+}
+.input-field input{
+  font-weight: 400;
+  display: block;
+  border: none;
+  outline: 0;
+}
+
+textarea.input-field{
+  width: 100%;
+}
+
+.btn-main{
+  background: #366BFF;
+  box-shadow: 0px 10px 20px rgba(54, 107, 255, 0.2);
+  padding: 12px 38px;
+  border: 0;
+  color:white;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.social-media{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-media img{
+  width:20px;
+}
+
+/* Utilities */
+
+.container{
+  width: min(100%, 1100px);
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-sm{
+  width: min(100%, 530px);
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-md {
+  width: min(100%, 750px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-text{
+  font-weight: 700;
+  font-size: 2.125rem;
+  font-family: Poppins, sans-serif;
+}
+
+.green-dot{
+  height: 0.8rem;
+  width: 0.8rem;
+  background-color: #00F07D;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative;
+  top:-1px;
+}
+.text-sm{
+  font-size: 0.875rem;
+}
+.text-md{
+  font-size: 1.25rem;
+}
+.text-xl{
+  font-size: 2.75rem;
+}
+.top-space{
+  margin-top: 1rem;
+}
+.top-space-xs{
+  margin-top: 0.625rem;
+}
+.top-space-md {
+  margin-top: 1.875rem;
+}
+.top-space-lg {
+  margin-top: 3.75rem;
+}
+.text-highlight{
+  color:#FF2EAB;
+}
+.text-accent {
+  color: #366BFF;;
+}
+.text-secondary{
+  opacity: 0.64;
+}
+.font-roboto{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+.font-bold{
+  font-weight: 700;
+}
+.circle{
+  border-radius: 50%;
+}
