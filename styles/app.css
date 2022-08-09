@@ -142,6 +142,7 @@ html,body{
 
 .contact{
   display: flex;
+  flex-wrap: wrap;
   gap: min(5vw,95px)
 }
 .contact .card{
